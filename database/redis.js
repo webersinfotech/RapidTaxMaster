@@ -3,8 +3,7 @@ const Redis = require("ioredis")
 class RedisClass {
     constructor() {
         this.client = new Redis({
-            port: 6379, // Redis port
-            host: "rapidtax.1laadw.0001.aps1.cache.amazonaws.com", // Redis host
+            host: "rapidtax.1laadw.0001.aps1.cache.amazonaws.com:6379", // Redis host
         });
     }
 
