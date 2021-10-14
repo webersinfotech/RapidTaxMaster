@@ -2,9 +2,7 @@ const Redis = require("ioredis")
 
 class RedisClass {
     constructor() {
-        this.client = new Redis({
-            host: "redis://rapidtax.1laadw.0001.aps1.cache.amazonaws.com:6379", // Redis host
-        });
+        this.client = new Redis("redis://rapidtax.1laadw.0001.aps1.cache.amazonaws.com:6379");
     }
 
     async multipleSet(keys) {
